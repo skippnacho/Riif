@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riif Barber Co. | El Laguito, Cartagena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-sand: #eadfc5;
+            --color-crust: #664e27;
+            --color-accent: #c6ac89;
+            --color-dark: #1a1a1a;
+            --color-soft: #eae4d6;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-sand);
+            color: var(--color-dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .font-novecento {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 600;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(26,26,26,0.85), rgba(26,26,26,0.5));
+        }
+
+        .service-card {
+            border-bottom: 1px solid rgba(234, 223, 197, 0.2);
+            padding-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-bottom: 1px solid #eadfc5;
+        }
+
+        .qr-container {
+            border: 1px solid var(--color-crust);
+            background: #fff;
+            padding: 1.5rem;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-[#664e27]/20">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex flex-col leading-none">
+                <span class="text-2xl font-bold tracking-tighter italic text-[#eadfc5]">RIIF</span>
+                <span class="text-[10px] font-novecento text-white tracking-[0.4em]">BARBER CO.</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-[11px] font-novecento text-[#eadfc5]">
+                <a href="#inicio" class="hover:text-white transition">Inicio</a>
+                <a href="#servicios" class="hover:text-white transition">Precios</a>
+                <a href="#reserva-qr" class="hover:text-white transition">QR</a>
+                <a href="#contacto" class="hover:text-white transition">Contacto</a>
+            </div>
+
+            <a href="https://www.fresha.com/book-now/riif-barber-co-wu9zfvio/services?lid=1454160&share=true&pId=1381014" target="_blank" class="bg-[#664e27] text-white px-5 py-2 rounded-sm font-novecento text-[10px] hover:bg-[#c6ac89] transition">
+                RESERVAR CITA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Barbería Riif El Laguito" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mt-16">
+            <p class="text-[#c6ac89] font-novecento mb-4 text-xs tracking-widest">EST. 2024 · CARTAGENA</p>
+            <h1 class="text-5xl md:text-7xl mb-8 text-[#eadfc5]">Cuidado Masculino de Élite</h1>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://www.fresha.com/book-now/riif-barber-co-wu9zfvio/services?lid=1454160&share=true&pId=1381014" target="_blank" class="inline-block px-10 py-4 bg-[#664e27] text-white font-novecento text-xs tracking-widest hover:bg-[#c6ac89] transition-colors">
+                    AGENDAR AHORA
+                </a>
+                <a href="#reserva-qr" class="inline-block px-10 py-4 border border-[#eadfc5] text-[#eadfc5] font-novecento text-xs tracking-widest hover:bg-[#eadfc5] hover:text-black transition-colors">
+                    ESCANEAR QR
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios y Precios -->
+    <section id="servicios" class="py-24 px-6 bg-[#1a1a1a]">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4 text-[#eadfc5]">Lista de Precios</h2>
+                <div class="w-20 h-1 bg-[#664e27] mx-auto mb-4"></div>
+                <p class="text-[#c6ac89] font-novecento text-[10px] tracking-[0.3em]">SERVICIOS Y EXPERIENCIAS EN EL LAGUITO</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-8">
+                <!-- Columna 1 -->
+                <div class="space-y-8">
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Tinte (Cambio)</h3>
+                            <span class="text-[#eadfc5] font-bold">$180.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-xs italic">Hair Dye (Colour Change)</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Riif Black Experience</h3>
+                            <span class="text-[#eadfc5] font-bold">$95.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-[10px] uppercase tracking-tighter">Drink + Haircut + Beard + Mask + Facial Treatment + Eye Massage</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Riif Gold Experience</h3>
+                            <span class="text-[#eadfc5] font-bold">$70.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-[10px] uppercase tracking-tighter">Drink + Cut + Mask + Facial Treatment + Eye Massage</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Tinte Un Color</h3>
+                            <span class="text-[#eadfc5] font-bold">$80.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-xs italic">One Color Hair Dye</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Barba + Tinte</h3>
+                            <span class="text-[#eadfc5] font-bold">$70.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-xs italic">Beard + Color</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Corte + Barba</h3>
+                            <span class="text-[#eadfc5] font-bold">$60.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-xs italic">Haircut + Beard</p>
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="space-y-8">
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Barba Experience</h3>
+                            <span class="text-[#eadfc5] font-bold">$40.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-[10px] uppercase tracking-tighter">Drink + Beard + Mask + Facial Treatment + Massage</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Corte / Haircut</h3>
+                            <span class="text-[#eadfc5] font-bold">$35.000</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Barba / Beard</h3>
+                            <span class="text-[#eadfc5] font-bold">$25.000</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Depilación Nasal</h3>
+                            <span class="text-[#eadfc5] font-bold">$20.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-xs italic">Nasal Removal</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Mascarilla / Mask</h3>
+                            <span class="text-[#eadfc5] font-bold">$20.000</span>
+                        </div>
+                        <p class="text-zinc-500 text-xs italic">Blackhead Mask + Facial Treatment</p>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Bordes / Fringe Trim</h3>
+                            <span class="text-[#eadfc5] font-bold">$15.000</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card group">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-xl text-[#eadfc5] uppercase tracking-wide">Cejas / Eyebrows</h3>
+                            <span class="text-[#eadfc5] font-bold">$10.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección QR -->
+    <section id="reserva-qr" class="py-24 px-6 bg-[#eadfc5]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl mb-6 text-[#1a1a1a]">Reserva Rápida</h2>
+            <p class="text-[#664e27] font-novecento text-xs tracking-[0.3em] mb-12 italic">Escanéa el código para agendar vía Fresha</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 bg-[#1a1a1a] p-12 shadow-2xl">
+                <div class="qr-container">
+                    <!-- Generando QR dinámico para tu enlace de Fresha -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.fresha.com/book-now/riif-barber-co-wu9zfvio/services?lid=1454160%26share=true%26pId=1381014" alt="Código QR de Reserva Riif Barber Co" class="w-48 h-48">
+                </div>
+                <div class="text-left max-w-sm">
+                    <h3 class="text-2xl text-[#eadfc5] mb-4">¿Prefieres escanear?</h3>
+                    <p class="text-[#eadfc5]/70 text-sm mb-6 leading-relaxed">
+                        Apunta tu cámara al código QR para acceder directamente a nuestro calendario de reservas y elegir el profesional de tu preferencia.
+                    </p>
+                    <div class="flex items-center gap-2 text-[#eadfc5]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="font-novecento text-[10px]">Simple · Rápido · Seguro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="py-20 px-6 bg-black text-white border-t border-[#664e27]/30">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div>
+                <div class="text-4xl font-bold italic text-[#eadfc5] mb-2">RIIF</div>
+                <div class="text-[12px] font-novecento text-[#c6ac89] tracking-[0.6em] mb-8">BARBER CO.</div>
+                <p class="text-zinc-500 text-sm max-w-xs leading-relaxed">
+                    Ubicados en El Laguito, Cartagena. El estándar de oro en barbería tradicional y moderna para residentes y turistas.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="font-novecento text-[10px] text-[#c6ac89] mb-4">Ubicación</h4>
+                    <p class="text-sm text-zinc-300">El Laguito, Cartagena<br>Edificio Dann, Local Principal</p>
+                </div>
+                <div>
+                    <h4 class="font-novecento text-[10px] text-[#c6ac89] mb-4">Contacto</h4>
+                    <p class="text-sm text-zinc-300">+57 301 585 7963<br>@riifbarberco</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-zinc-900 text-[9px] font-novecento text-zinc-700 flex justify-between items-center">
+            <span>© 2024 RIIF BARBER CO.</span>
+            <div class="flex gap-4">
+                <a href="https://www.fresha.com/book-now/riif-barber-co-wu9zfvio/services?lid=1454160&share=true&pId=1381014" target="_blank" class="hover:text-white transition">AGENDAR CITA</a>
+            </div>
+            <span>DISEÑADO POR ANATERESA</span>
+        </div>
+    </footer>
+
+</body>
+</html>
